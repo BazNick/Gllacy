@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+<meta charset = "utf-8">
+<title>GllacyCatalog</title>
+<link href = "Normalize.css" rel = "stylesheet">
+<link href = "GllacyCatalog.css" rel = "stylesheet">
+</head>
+<body>
+
+  <header class = "head">
+    <ul class = "head-menu">
+      <li>
+      <a href = "GreatnessBegins.html"><img src = "..\Greatness begins\Картинки\Logo.svg"></a>
+  </li>
+      <li>
+        <a href = "#">Каталог</a>
+        <ul class = "sub-menu">
+          <div class = "foo">
+          <a href = "#">Каталог</a>
+        </div>
+          <li class = "novelty"><b class = "novelty-text">Новинки</b></li>
+          <hr class = "line"></hr>
+          <li><a href = "GllacyCatalog.html">Сливочное</a></li>
+          <li><a href = "#">Щербеты</a></li>
+          <li><a href = "#">Фрутовый лед</a></li>
+          <li><a href = "#">Мелорин</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href = "#">Доставка и оплата</a>
+      </li>
+      <li>
+        <a href = "#">О Компании</a>
+      </li>
+    </ul>
+    <div class = "head-main-data-for-user">
+      <div class = "search">
+      <a class = "search-btn" href = "#"></a>
+      <div class = "search-area">
+        <form action = "www.mail.ru" method = "get">
+        <input type = "search" id = "search" name = "search" required>
+        <label for = "search">Что ищем?</label>
+      </form>
+      </div>
+    </div>
+    <div class = "entrance">
+    <a class = "enter-btn" href = "#"><span class = "enter-title">Вход</span></a>
+    <div class = "entrance-area">
+      <a class = "enter-btn-copy" href = "#"><span class = "enter-title-copy">Вход</span></a>
+      <form action = "www.mail.ru" method = "post">
+      <input type = "email" name = "email" placeholder = "Электронная почта" id = "mail" required>
+      <label for = "mail">Электронная почта</label>
+      <input type = "password" name = "password" placeholder = "Пароль" id = "password" required>
+      <label for = "password">Пароль</label>
+      <div class = "references">
+      <input class = "enter" type="submit" value="Войти" name="submit_button">
+    </div>
+      <a href = "#">Забыли пароль?</a>
+      <a class = "reference" href = "#">Новая регистрация</a>
+      </form>
+    </div>
+    </div>
+    <div class = "cart">
+    <a class = "cart-btn" href = "#"><span class = "cart-title">Пусто</span><span class = "two-items">2 товара</span></a>
+    <div class = "cart-area">
+      <a class = "cart-btn-copy" href = "#"><span class = "two-items-copy">2 товара</span></a>
+      <table class = "cart-table">
+        <tr>
+          <td>
+            <button class = "delete-item" type = "button">Удалить</button>
+          </td>
+          <td>
+            <img src = "..\Greatness begins\Картинки\1.png" width = "33" height = "33" alt = "orange">
+          </td>
+          <td class = "description">Пломбир с апельсиновым джемом</td>
+          <td class = "kilos-per-price">1,5 кг <span class = "price-color">x 200 руб.</span></td>
+          <td class = "price">300 руб.</td>
+        </tr>
+        <tr>
+          <td>
+          <button class = "delete-item-1" type = "button">Удалить</button>
+          </td>
+          <td>
+            <img src = "..\Greatness begins\Картинки\3.png" width = "33" height = "33" alt = "strawberry">
+          </td>
+          <td class = "description">Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td class = "kilos-per-price">1,5 кг <span class = "price-color">x 300 руб.</span></td>
+          <td class = "price">450 руб.</td>
+        </tr>
+      </table>
+      <hr class = "cart-line"></hr>
+      <p class = "summary">Итого: 750 руб.</p>
+      <div class = "clearfix"></div>
+      <div class = "change-color">
+      <a href = "#" class = "checkout">Оформить заказ</a>
+    </div>
+    </div>
+    </div>
+<p class = "head-working-time-and-phone">
+  С 10 до 20, ежедневно<br>
+ <span class = "phone">8 812 450-25-25</span>
+</p>
+</div>
+<span class = "head-bread-crumbs">
+  <a href = "GreatnessBegins.html">Главная</a>
+  &raquo
+  <a href = "#">Каталог</a>
+  &raquo
+  <a href = "#">Сливочное</a>
+</span>
+  </header>
+
+  <div class = "filters">
+    <h1>Сливочное мороженное</h1>
+    <div class = "sorting">
+    <span class = "sort">Сортировка:</span>
+    <select name = "sorting-by-price">
+      <option value = "popular" selected>по популярности</option>
+      <option value = "cheap-first">сначала недорогие</option>
+      <option value = "expensive-first">сначала дорогие</option>
+      <option value = "by-fatness">по жирности</option>
+    </select>
+  </div>
+  <div class = "price">
+    <span class = "choose-by-price">Цена: 100 руб. - 500 руб.</span>
+    <div class = "price-range">
+      <div class = "scale">сначала недорогие сначала
+        <div class = "min-price"></div>
+        <div class = "max-price"></div>
+      <span class = "scale-head"></span>
+      <span class = "scale-tail"></span>
+    </div>
+    </div>
+  </div>
+  <div class = "fatness">
+    <span class = "choose-by-fatness">Жирность:</span>
+    <div class = "choice">
+    <input type = "radio" name = "percents" value = "zero" id = "zero">
+    <label for = "zero">0%</label>
+      <input type = "radio" name = "percents" value = "ten" id = "ten" checked>
+      <label for = "ten">до 10%</label>
+        <input type = "radio" name = "percents" value = "thirty" id = "thirty">
+        <label for = "thirty">до 30%</label>
+          <input type = "radio" name = "percents" value = "under-thirty" id = "under-thirty">
+          <label for = "under-thirty">выше 30%</label>
+        </div>
+  </div>
+
+  <div class = "fillers-area clearfix">
+  <span class = "filler">Наполнители:</span>
+  <div class = "fillers">
+    <input type = "checkbox" id = "chocolate" checked>
+    <label for = "chocolate">шоколадные</label>
+      <input type = "checkbox" id = "sugar" checked>
+      <label for = "sugar">сахарные присыпки</label>
+        <input type = "checkbox" id = "fruits">
+        <label for = "fruits">фрукты</label>
+          <input type = "checkbox" id = "syrup">
+          <label for = "syrup">сиропы</label>
+            <input type = "checkbox" id = "jams">
+            <label for = "jams">джемы</label>
+  </div>
+    <a href = "#apply" class = "btn-color">Применить</a>
+</div>
+  </div>
+
+  <ul class = "products clearfix">
+    <li class = "item-1">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-1" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\1.png">
+      <div class = "products-price">
+      310<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+    </div>
+        <a href = "#item-1" class = "items">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+    </li>
+    <li class = "item-2">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-2" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\2.png">
+      <div class = "products-price">
+        380<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+        </div>
+           <a href = "#item-2" class = "items">Сливочно-кофейное с кусочками шоколада</a>
+    </li>
+    <li class = "item-3">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-3" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\3.png">
+        <div class = "products-price">
+        355<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+          <a href = "#item-3" class = "items">Сливочно-клубничное с присыпкой из белого шоколада</a>
+    </li>
+    <li class = "item-4">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-4" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\4.png">
+      <div class = "products-price">
+      415<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+    </div>
+        <a href = "#item-4" class = "items">Сливочное крем-брюле с карамельной подливкой</a>
+    </li>
+    <li class = "item-5">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-5" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\1-1.png">
+      <div class = "products-price">
+        325<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+      <div class = "fucking-item">
+        <a href = "#item-5" class = "items">Сливочное с брусничным<br>джемом</a>
+      </div>
+    </li>
+    <li class = "item-6">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-6" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\2-1.png">
+      <div class = "products-price">
+        410<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+          <a href = "#item-6" class = "items">Сливочно-черничное с цельными ягодами черники</a>
+    </li>
+    <li class = "item-7">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-7" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\3-1.png">
+      <div class = "products-price">
+        375<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+          <a href = "#item-7" class = "items">Сливочно-лимонное с карамельной присыкой</a>
+    </li>
+    <li class = "item-8">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-8" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\4-1.png">
+      <div class = "products-price">
+        320<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+        <a href = "#item-8" class = "items">Сливочное с шоколадной стружкой</a>
+    </li>
+    <li class = "item-9">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-9" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\1@1x.png">
+      <div class = "products-price">
+        440<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+        <a href = "#item-9" class = "items">Сливочно-ванильное с кусочками шоколада</a>
+    </li>
+    <li class = "item-10">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-10" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\2@1x.png">
+      <div class = "products-price">
+        435<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+          <a href = "#item-10" class = "items">Сливочное с ментоловым сиропом</a>
+    </li>
+    <li class = "item-11">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-11" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\3@1x.png">
+      <div class = "products-price">
+        355<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+      </div>
+        <a href = "#item-11" class = "items">Сливочное с кусочками черного шоколада</a>
+    </li>
+    <li class = "item-12">
+      <div class = "item-background">
+      </div>
+        <a href = "#item-12" class = "btn">Быстрый просмотр</a>
+      <img src = "..\Greatness begins\Картинки\4@1x.png">
+      <div class = "products-price">
+      420<img src = "..\Greatness begins\Картинки\Рубль.svg"><span class = "kilos">/кг</span>
+    </div>
+    <div class = "fucking-item">
+        <a href = "#item-12" class = "items">Сливочное с мятным<br>сиропом</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class = "paginator">
+    <div class = "prev" href = "#prev"></div>
+    <a class = "enabled" href = "#1">1</a>
+    <a href = "#2">2</a>
+    <a href = "#3">3</a>
+    <a href = "#4">4</a>
+    <a href = "#5">5</a>
+    <a class = "next" href = "#next"></a>
+  </div>
+
+  <div class = "footer clearfix">
+    <div class = "footer-social">
+      <a class = "twitter" href = "#twitter"></a>
+    <a class = "instagram" href = "#instagram"></a>
+    <a class = "facebook" href = "#facebook"></a>
+    <a class = "vk" href = "#vk"></a>
+    </div>
+    <div class = "footer-menu">
+      <div class = "top-info">
+        <div class = "left-info">
+        <a href = "#">Для поставщиков</a>
+      </div>
+      <div class = "right-info">
+            <a href = "#">Наши документы</a>
+          </div>
+          </div>
+          <div class = "bottom-info">
+            <div class = "left-info">
+            <a href = "#">О производстве</a>
+          </div>
+          <div class = "right-info">
+              <a href = "#">Экологические стандарты</a>
+            </div>
+            </div>
+    </div>
+    <div class = "footer-authors">
+      <img src = "..\Greatness begins\Картинки\Лого.svg">
+      <p>Сделано в <a href = "#">HTML Academy</a> &copy; 2016</p>
+    </div>
+  </div>
+
+</body>
+</html>
