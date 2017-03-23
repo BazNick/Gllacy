@@ -1,0 +1,2169 @@
+body {
+background-color: #849d8f;
+ font-family: "Roboto", "Arial", sans-serif;
+ color: white;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../Greatness begins/Картинки/Мороженко 1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+transition: background-image 0.5s ease, background-color 0.5s ease;
+background-color: #849d8f;
+}
+
+
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  visibility: hidden;
+}
+
+.wrapper::before,
+.wrapper::after {
+  background-image: url("../Greatness begins/Картинки/Мороженко 3.png");
+}
+
+.wrapper::after {
+  background-image: url("../Greatness begins/Картинки/Мороженко 2.png");
+}
+
+.slider-trigger {
+  display: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+   width: 21px;
+   height: 21px;
+   cursor: pointer;
+   border-radius: 50%;
+   border: 2px solid white;
+   margin-right: 5px;
+  position: relative;
+   bottom: -200px;
+}
+
+.slider-controls label:hover {
+  background-color: #a1afa5;
+}
+
+.slider-area {
+  min-width: 900px;
+width: 1146px;
+  margin-top: 290px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-text-1,
+.slider-text-2,
+.slider-text-3  {
+  display: none;
+}
+
+#btn-1:checked ~ .wrapper #slider-1,
+#btn-2:checked ~ .wrapper #slider-2,
+#btn-3:checked ~ .wrapper #slider-3 {
+  display: block;
+}
+
+#btn-1:checked ~ .wrapper label[for="btn-1"],
+#btn-2:checked ~ .wrapper label[for="btn-2"],
+#btn-3:checked ~ .wrapper label[for="btn-3"] {
+  background-color: white;
+}
+
+#btn-1:checked ~ .wrapper {
+  background-image: url("../Greatness begins/Картинки/Мороженко 1.png");
+  background-color: #849d8f;
+}
+
+#btn-2:checked ~ .wrapper {
+  background-image: url("../Greatness begins/Картинки/Мороженко 2.png");
+  background-color: #8996a6;
+}
+
+
+#btn-3:checked ~ .wrapper {
+  background-image: url("../Greatness begins/Картинки/Мороженко 3.png");
+  background-color: #9d8b84;
+}
+
+
+.slider-text-1,
+.slider-text-2,
+.slider-text-3 {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+  text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-text-1 .btn,
+.slider-text-2 .btn,
+.slider-text-3 .btn {
+  font-size: 31.48px;
+  font-weight: bold;
+  line-height: 62.93px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 40px;
+  width: 195px;
+  padding-left: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #ec573b;
+  padding-right: 37px;
+  text-align:justify;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+}
+
+.slider-text-1 .btn:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.slider-text-1 .btn:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.slider-text-2 .btn:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.slider-text-2 .btn:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.slider-text-3 .btn:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.slider-text-3 .btn:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+
+
+
+.head {
+  min-height: 115px;
+  padding-top: 10px;
+    width: 1146px;
+    min-width: 900px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-menu {
+  width: 573px;
+  float: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.head-menu > li a {
+  border-radius: 40px;
+}
+
+.head-menu > li {
+display: inline-block;
+margin-right: 5px;
+vertical-align: middle;
+position: relative;
+/*свойство, чтобы не пропадало мен*/
+}
+
+.head-menu > li:first-child > a {
+  display: block;
+  position: relative;
+  pointer-events: none;
+
+}
+
+.head-menu > li:nth-child(2) {
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.head-menu > li:nth-child(2) > a {
+  display: block;
+  padding: 10px 15px 10px 16px;
+}
+
+.head-menu > li:nth-child(3) > a {
+  display: block;
+  padding: 10px 15px 10px 16px;
+}
+
+.head-menu > li:nth-child(4) > a {
+  display: block;
+  padding: 10px 15px 10px 16px;
+}
+
+.head-menu li:nth-child(2) {
+  margin-bottom: 13px;
+}
+
+.head-menu li:nth-child(3) {
+  margin-bottom: 13px;
+}
+
+.head-menu li:nth-child(4) {
+  margin-bottom: 13px;
+}
+
+.head-menu li:last-child {
+  margin-right: 0px;
+}
+
+.head-menu .sub-menu {
+  position: absolute;
+  margin-left: -5px;
+  padding: 0px;
+  list-style: none;
+  background-color: #f8f7f4;
+  width: 143px;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 2px #59675f;
+}
+
+.head-menu .sub-menu {
+  margin-top: 5px;
+}
+
+.head-menu .sub-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 21px;
+  border-radius: 0px;
+}
+
+.sub-menu li:first-child {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 21px;
+  font-size: 14px;
+}
+
+.head-menu > li:hover .sub-menu {
+  display: block;
+}
+
+.head-menu > li:not(:first-child) > a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #f7f6f3;
+}
+
+.head-menu > li:not(:first-child) > a:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 2px 0 #686868;
+}
+
+.head-menu .sub-menu li:first-child a {
+  font-weight: bold;
+}
+
+.head-menu .sub-menu li:first-child {
+  margin-bottom: 5px;
+}
+
+.head-menu .sub-menu li:nth-child(2) {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.head-menu .sub-menu li:nth-child(3) {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.head-menu .sub-menu li:nth-child(4) {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 6px;
+}
+
+.head-menu .sub-menu li:nth-child(5) {
+  margin-bottom: 3px;
+}
+
+.head-menu .sub-menu a:hover {
+  background-color: #fbded7;
+}
+
+.head-menu .sub-menu a:active {
+  background-color: #f6b5a5;
+}
+
+.head-menu li:last-child {
+  margin-right: 0px;
+}
+
+.head .sub-menu .line {
+  width: 128px;
+  border: 1px solid #d1d0ce;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+.head-menu a {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right;
+}
+
+.sub-menu .foo a {
+  position: absolute;
+  top: -43px;
+    border-radius: 40px;
+      padding: 10px 15px 10px 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      display: block;
+      left: 5px;
+}
+
+.head-menu li:nth-child(2):hover .foo a {
+  color: black;
+  text-decoration: none;
+  background-color: #f7f6f3;
+}
+
+
+.sub-menu .foo a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #f7f6f3;
+}
+
+.sub-menu .foo a:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 2px 0 #686868;
+}
+
+.sub-menu:hover .foo a {
+  color: black;
+  text-decoration: none;
+  background-color: #f7f6f3;
+}
+
+.sub-menu .novelty .novelty-text {
+  color: black;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.head-main-data-for-user {
+  width: 273px;
+  float: right;
+  height: 113px;
+  position: relative;
+}
+
+
+.search,
+.entrance,
+.cart {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.search a {
+  display: block;
+  position: relative;
+width: 33px;
+height: 33px;
+border-radius: 50%;
+background-color: #a1b5a9;
+margin-top: 15px;
+}
+
+
+.search a::before {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -141px;
+width: 17px;
+height: 17px;
+content: "";
+position: absolute;
+top: 8px;
+left: 8px;
+}
+
+.entrance a {
+  display: block;
+  position: relative;
+}
+
+.entrance .enter {
+  outline: none;
+}
+
+.references input[type=submit]:active {
+  box-shadow: inset 0 2px 2px 0 #ac1000;
+}
+
+.entrance .enter-btn {
+  width: 92px;
+  height: 12px;
+  background-color: #a1b5a9;
+  padding-top: 20px;
+border-radius: 40px;
+position: relative;
+}
+
+.entrance .enter-btn::before {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -41px;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.enter-btn .enter-title {
+position: absolute;
+top: 8px;
+right: 15px;
+}
+
+.head-main-data-for-user a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.head-main-data-for-user .search {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.head-main-data-for-user .search .search-area {
+  position: absolute;
+  right: -3px;
+  top: 55px;
+  box-shadow: 0 15px 20px 2px #59675f;
+}
+
+.head-main-data-for-user .search .search-area input {
+  padding: 10px;
+  font-size: 14px;
+
+}
+
+.search-area input[type=search]{
+  width: 300px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 17px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  outline: none;
+}
+
+.search-area input[type=search] + label {
+  position: absolute;
+  font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    cursor: text;
+    top: 22px;
+    left: 25px;
+    display: block;
+}
+
+.entrance-area input[type=password] + label {
+  position: absolute;
+    display: none;
+}
+
+.entrance-area input[type=password]:focus ~ label,
+.entrance-area input[type=password]:valid ~ label {
+  font-size: 10px;
+   transform: translate(20px, 34px);
+   color: #729cdc;
+   display: block;
+}
+
+.entrance-area input[type=email] + label {
+display: none;
+position: absolute;
+}
+
+.entrance-area input[type=email]:focus + label {
+  font-size: 10px;
+   transform: translate(20px, -17px);
+   color: #729cdc;
+   display: block;
+}
+
+.search-area input[type=search]:focus ~ label,
+.search-area input[type=search]:valid ~ label {
+  font-size: 10px;
+   transform: translate(-5px, -27px);
+   color: #729cdc;
+   display: block;
+}
+
+.user-mail .label-box {
+  position: absolute;
+}
+
+.label-box label {
+  display: none;
+
+}
+
+.user-mail input:focus ~ .label-box label,
+.user-mail input:valid ~ .label-box label {
+  font-size: 10px;
+   transform: translate(30px, -65px);
+   color: #729cdc;
+display: block;
+}
+
+.head-main-data-for-user .search-area {
+  width: 345px;
+  height: 69px;
+  background-color: #f8f7f4;
+  display: none;
+  border-radius: 5px;
+}
+
+.search .search-btn:hover  {
+background-color: #f7f6f3;
+}
+
+.search .search-btn:hover::before {
+  background: url("../Greatness begins/Картинки/Лупа черная.svg") no-repeat top left;
+  width: 17px;
+  height: 17px;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.search-area input[type=search]:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.search-area input[type=search]:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.head-main-data-for-user > .search:hover .search-area {
+display: block;
+}
+
+.search:hover .search-btn {
+  background-color: #f7f6f3;
+}
+
+.search:hover .search-btn::before {
+  background: url("../Greatness begins/Картинки/Лупа черная.svg") no-repeat top left;
+  width: 17px;
+  height: 17px;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.head-main-data-for-user .entrance {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.entrance .enter-btn:hover {
+  background-color: #f8f7f4;
+  color: black;
+}
+
+.entrance .enter-btn:hover::before {
+  background: url("../Greatness begins/Картинки/Вход черный.svg") no-repeat top left;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+/*копия кнопки входа*/
+.entrance-area:hover .enter-btn-copy {
+  background-color: #f8f7f4;
+  color: black;
+}
+
+.entrance:hover .enter-btn-copy {
+  background-color: #f8f7f4;
+  color: black;
+}
+
+.enter-btn-copy {
+  position: absolute;
+  top: -73px;
+  right: -13px;
+}
+
+.entrance-area:hover .enter-btn-copy::before {
+  background: url("../Greatness begins/Картинки/Вход черный.svg") no-repeat top left;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.entrance-area .enter-btn-copy::before {
+background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -41px;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.entrance:hover .enter-btn-copy::before {
+  background: url("../Greatness begins/Картинки/Вход черный.svg") no-repeat top left;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.entrance .enter-btn-copy::before {
+background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -41px;
+width: 20px;
+height: 19px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.entrance-area a {
+  display: block;
+  position: relative;
+}
+
+.entrance-area .enter-btn-copy {
+  width: 92px;
+  height: 12px;
+  background-color: #a1b5a9;
+  padding-top: 20px;
+border-radius: 40px;
+position: relative;
+}
+
+.enter-btn-copy .enter-title-copy {
+position: absolute;
+top: 4px;
+right: 15px;
+font-size: 14px;
+color: white;
+}
+
+.entrance-area:hover .enter-title-copy {
+  color: black;
+}
+
+.entrance:hover .enter-title-copy {
+  color: black;
+}
+
+
+.head-main-data-for-user .entrance .entrance-area {
+  width: 272px;
+  position: absolute;
+  background-color: #f8f7f4;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  right: -2px;
+  top: 38px;
+  /*показать форму входа*/
+display: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 2px #59675f;
+}
+
+.head-main-data-for-user > .entrance:hover .entrance-area {
+  display: block;
+}
+
+.head-main-data-for-user .entrance .entrance-area a {
+  color: black;
+  text-decoration: underline;
+  font-size: 13px;
+  line-height: 24.3px;
+}
+
+.entrance-area input[type=email] {
+  float: left;
+    width: 241px;
+      margin-left: 15px;
+      height: 39px;
+      font-size: 14px;
+      line-height: 24.3px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(178,178,178,.5);
+        border-radius: 5px;
+        outline: none;
+        margin-top: -50px;
+}
+
+.entrance-area input[type=email]:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.entrance-area input[type=email]:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.entrance-area input[type=password] {
+  float: left;
+  width: 241px;
+  margin-left: 15px;
+  margin-top: 0px;
+  height: 39px;
+  font-size: 14px;
+  line-height: 24.3px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(178,178,178,.5);
+  border-radius: 5px;
+  outline: none;
+}
+
+.entrance-area input[type=password]:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.entrance-area input[type=password]:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.entrance-area .enter {
+  float: left;
+  display: inline-block;
+  background-color: #eb553a;
+  border: 1px solid;
+  margin-right: 0px;
+  text-align: center;
+padding: 10px 0px;
+width: 100px;
+margin-left: 15px;
+  border-radius: 40px;
+cursor: pointer;
+}
+
+.entrance-area .references .enter {
+  color: white!important;
+  font-size: 15px!important;
+  font-weight: bold;
+  line-height: 24.3px!important;
+text-decoration: none!important;
+margin-top: 15px;
+}
+
+.entrance-area .references:hover > .enter {
+  background-color: #f17c64;
+}
+
+.entrance-area .references:active > .enter {
+  background-color: #da4f36;
+}
+
+.entrance-area a {
+  display: block;
+  float: right;
+  width: 120px;
+  padding: 0px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.entrance-area .reference {
+  margin-top: 0px;
+}
+
+.entrance-area a:hover {
+  color: #ffbc9e!important;
+}
+
+.head-main-data-for-user .cart {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/*корзина*/
+.cart .cart-area {
+  background-color: #f8f7f4;
+  width: 540px;
+  position: absolute;
+  right: -2px;
+  top: 38px;
+  color: black;
+  font-size: 13px;
+  /*показать форму корзины*/
+display: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 2px #59675f;
+
+}
+
+.cart .cart-btn:hover {
+  background-color: #f8f7f4;
+  color: black;
+}
+
+.cart .cart-btn:hover::before {
+  background:url("../Greatness begins/Картинки/Корзина заполнена.png") no-repeat top left;
+width: 21px;
+height: 20px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.cart a {
+  display: block;
+  position: relative;
+}
+
+.cart {
+  margin-right: 0px;
+}
+
+.cart .cart-btn {
+  width: 118px;
+  height: 12px;
+    margin-right: 0px;
+      background-color: #a1b5a9;
+    padding-top: 20px;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.cart .cart-btn::before {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -111px;
+width: 21px;
+height: 20px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.cart-btn .cart-title {
+  position: absolute;
+  top: 8px;
+  right: 35px;
+  display: block;
+
+}
+
+.cart .cart-btn:hover .cart-title {
+  display: none;
+}
+
+.cart .cart-btn:hover .two-items {
+  display: block;
+}
+
+/*появление надписи "2 товара"*/
+.cart-btn .two-items {
+  font-size: 14px;
+  color: black;
+  top: 8px;
+  right: 15px;
+  position: absolute;
+  display: none;
+}
+
+/*копия*/
+.cart-btn-copy .two-items-copy {
+  font-size: 14px;
+  color: black;
+  top: 8px;
+  right: 15px;
+  position: absolute;
+  display: none;
+}
+
+.cart-btn-copy {
+  position: relative;
+  left: 420px;
+  top: -39px;
+
+}
+
+.cart-area:hover .two-items-copy {
+  display: block;
+}
+
+.cart-area:hover .cart-btn-copy {
+  background-color: #f8f7f4;
+}
+
+.cart-area .cart-btn-copy {
+  width: 118px;
+  height: 12px;
+    margin-right: 0px;
+      background-color: #a1b5a9;
+    padding-top: 20px;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.cart-btn-copy::before {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -111px;
+width: 21px;
+height: 20px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.cart-area:hover .cart-btn-copy::before {
+  background:url("../Greatness begins/Картинки/Корзина заполнена.png") no-repeat top left;
+width: 21px;
+height: 20px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.cart:hover .cart-btn-copy {
+  background-color: #f8f7f4;
+}
+
+.cart:hover .cart-btn-copy::before {
+  background:url("../Greatness begins/Картинки/Корзина заполнена.png") no-repeat top left;
+width: 21px;
+height: 20px;
+content: "";
+position: absolute;
+top: 5.5px;
+left: 18px;
+}
+
+.cart:hover .two-items-copy {
+  display: block;
+}
+
+/*кнопка удаления товара*/
+.delete-item {
+  font-size: 0;
+  width: 15px!important;
+  height: 15px;
+  position: absolute;
+  outline: none;
+    border: none;
+    cursor: pointer;
+    left: 31px;
+    top: 37px;
+background-color: #f8f7f4;
+}
+
+.delete-item::before,
+.delete-item::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: black;
+  right: 0px;
+
+}
+
+.delete-item::before {
+  transform: rotate(45deg);
+}
+
+.delete-item::after {
+  transform: rotate(-45deg);
+}
+
+/*вторая кнопка удаления товара*/
+.delete-item-1 {
+  font-size: 0;
+  width: 15px!important;
+  height: 15px;
+  position: absolute;
+  outline: none;
+    border: none;
+    cursor: pointer;
+    left: 31px;
+    top: 88px;
+    background-color: #f8f7f4;
+}
+
+.delete-item-1::before,
+.delete-item-1::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: black;
+  right: 0px;
+
+}
+
+.delete-item-1::before {
+  transform: rotate(45deg);
+}
+
+.delete-item-1::after {
+  transform: rotate(-45deg);
+}
+
+
+.cart-table .price-color {
+  color: #878787;
+}
+
+.cart .cart-area a {
+  color: black;
+}
+
+.cart-table {
+  padding: 0px 35px 17px 27px;
+  border-spacing: 0px 15px;
+  margin-top: -20px;
+}
+
+
+.cart-table tr {
+  padding-bottom: 10px;
+}
+
+
+.cart-table td:first-child {
+  padding-right: 30px;
+}
+
+.cart-table td:nth-child(2) {
+  padding-right: 10px;
+
+}
+
+.cart-table td:nth-child(3) {
+  padding-right: 15px;
+
+}
+
+.cart-table td:nth-child(4) {
+  padding-right: 15px;
+}
+
+.cart-table .kilos-per-price {
+  width: 105px;
+}
+
+.cart-table .price {
+  width: 51px;
+}
+
+.cart-table .delete-item {
+  display: block;
+  width: 10px;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.cart-table .description {
+  width: 225px;
+}
+
+.cart-area .cart-line {
+  width: 510px;
+  border: 1px solid #cacac7;
+}
+
+.cart-area .summary {
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+
+/*Оформить заказ*/
+.cart-area .checkout {
+  display: block;
+  float: right;
+  padding: 10px 22px;
+  font-size: 15px;
+  line-height: 24.3px;
+  font-weight: bold;
+background-color: #f16542;
+margin-bottom: 20px;
+margin-right: 20px;
+  border-radius: 40px;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+}
+
+.cart-area .change-color:hover .checkout {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.cart-area .change-color:active .checkout {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.cart-area .checkout {
+  color: white!important;
+}
+
+.head-main-data-for-user > .cart:hover .cart-area {
+display: block;
+}
+
+.head-working-time-and-phone {
+  text-align: right;
+margin-top: 15px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.head-working-time-and-phone .phone {
+  font-size: 22px;
+}
+
+.promo {
+  margin-top: 40px;
+  width: 1146px;
+  min-width: 900px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-block {
+  width: 560px;
+  min-height: 230px;
+  background-image: url("../Greatness begins/Картинки/Малиновый фон.png");
+  float: left;
+  background-repeat: no-repeat;
+}
+
+.raspberry,
+.chocolate {
+  color: white;
+  font-size: 35px;
+  margin: 20px 267px 180px 20px;
+}
+
+.left-block p {
+padding-left: 20px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.right-block {
+  width: 560px;
+  min-height: 230px;
+background-image: url("../Greatness begins/Картинки/Шоколадный фон.png");
+float: right;
+background-repeat: no-repeat;
+}
+
+.right-block p {
+padding-left: 20px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.want-jam,
+.want-chocolate {
+  float: right;
+  margin-right: 45px;
+  margin-top: 40px;
+}
+
+.want-jam a,
+.want-chocolate a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 40px;
+  padding: 15px 24px 14px 22px;
+  background-color: #e95139;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+}
+
+.want-chocolate:hover .btn {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.want-jam:hover .btn {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.want-chocolate:active .btn {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.want-jam:active .btn {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+/*хиты*/
+.products {
+  width: 1146px;
+  min-width: 900px;
+  max-width: 1200px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products {
+  margin-top: 40px;
+}
+
+.products a {
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.products-price {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+  width: 157px;
+  min-height: 35px;
+vertical-align: top;
+position: absolute;
+bottom: 67px;
+z-index: 10;
+}
+
+
+.products-price img {
+vertical-align: text-bottom;
+margin-bottom: 8px;
+
+}
+
+.kilos {
+  font-size: 30px;
+}
+
+.products li {
+  position: relative;
+  width: 267px;
+  margin-top: 40px;
+  margin-right: 26px;
+}
+
+.products li:nth-child(1) {
+  margin-top: 0px;
+}
+
+.products li:nth-child(2) {
+  margin-top: 0px;
+}
+
+.products li:nth-child(3) {
+  margin-top: 0px;
+}
+
+.products li:nth-child(4) {
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.item-1 .items,
+.item-2 .items,
+.item-3 .items,
+.item-4 .items {
+  display: inline-block;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.item-1 {
+  float: left;
+}
+
+.item-2 {
+  float: left;
+}
+
+.item-3 {
+  float: left;
+}
+
+.item-4 {
+  float: left;
+}
+
+/*фон поверх картинок*/
+.item-background {
+  width: 275px;
+  height: 405px;
+  background-color: #afbeb4;
+  position: absolute;
+  top: -5px;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0.6;
+  display: none;
+}
+
+.item-1:hover .item-background {
+  display: block;
+}
+
+.item-2:hover .item-background {
+  display: block;
+}
+
+.item-3:hover .item-background {
+  display: block;
+}
+
+.item-4:hover .item-background {
+  display: block;
+}
+
+.item-1:hover .items,
+.item-2:hover .items,
+.item-3:hover .items,
+.item-4:hover .items {
+text-decoration: none;
+}
+
+
+.item-1 .btn,
+.item-2 .btn,
+.item-3 .btn,
+.item-4 .btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24.3px;
+  width: 194px;
+  text-align: center;
+  padding: 8px 10px 8px 10px;
+position: absolute;
+bottom: 15px;
+border-radius: 40px;
+left: 30px;
+background-color: #e95139;
+box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+bottom: -60px;
+display: none;
+}
+
+.item-1:hover .btn {
+  display: block;
+}
+
+.item-2:hover .btn {
+  display: block;
+}
+
+.item-3:hover .btn {
+  display: block;
+}
+
+.item-4:hover .btn {
+  display: block;
+}
+
+.item-1 .btn:hover,
+.item-2 .btn:hover,
+.item-3 .btn:hover,
+.item-4 .btn:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.item-1 .btn:active,
+.item-2 .btn:active,
+.item-3 .btn:active,
+.item-4 .btn:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+
+.item-background:first-of-type {
+  right: -5px;
+}
+
+
+.item-1 img,
+.item-2 img,
+.item-3 img,
+.item-4 img {
+  position: relative;
+  z-index: 10;
+}
+
+.item-1 a,
+.item-2 a,
+.item-3 a,
+.item-4 a {
+  position: relative;
+  z-index: 10;
+}
+
+
+.info {
+  color: black;
+  margin-top: 40px;
+  min-width: 900px;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../Greatness begins/Картинки/Вафля паттерн.jpg");
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 21px;
+  border-radius: 15px;
+}
+
+.info h1 {
+font-size: 24px;
+line-height: 30px;
+}
+
+.info .info-top {
+position: relative;
+}
+
+.info .info-top::before {
+  background: url("../Greatness begins/Картинки/Без названия (1).png") no-repeat top left;
+  width: 47px;
+  height: 47px;
+  background-position: 0px -171px;
+  position: absolute;
+  content: "";
+}
+
+.info .info-top::after {
+  background: url("../Greatness begins/Картинки/Без названия (1).png") no-repeat top left;
+  width: 47px;
+  height: 47px;
+  background-position: 0px -57px;
+  position: absolute;
+  content: "";
+  right: 500px;
+}
+
+.info .info-bottom {
+  position: relative;
+}
+
+
+.info-top .ice-cream-top {
+  width: 539px;
+float: left;
+box-sizing: border-box;
+padding-left: 55px;
+position: relative;
+margin-right: 22px;
+}
+
+.info-top .beef-top {
+  width: 560px;
+width: 539px;
+float: left;
+box-sizing: border-box;
+padding-left: 60px;
+position: relative;
+}
+
+.info-bottom .leaf-bottom {
+  width: 560px;
+width: 539px;
+float: left;
+box-sizing: border-box;
+padding-left: 55px;
+position: relative;
+margin-right: 22px;
+}
+
+
+.info-bottom .thermometer-bottom {
+  width: 560px;
+width: 539px;
+float: left;
+box-sizing: border-box;
+padding-left: 60px;
+position: relative;
+}
+
+.info .info-bottom::before {
+  background: url("../Greatness begins/Картинки/Без названия (1).png") no-repeat top left;
+  width: 47px;
+  height: 47px;
+  background-position: 0px -114px;
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 100px;
+}
+
+.info .info-bottom::after {
+  background: url("../Greatness begins/Картинки/Без названия (1).png") no-repeat top left;
+  width: 47px;
+  height: 47px;
+  background-position: 0px 0px;
+  position: absolute;
+  content: "";
+  right: 500px;
+  top: 100px;
+}
+
+.news-and-mailing {
+  margin-top: 40px;
+  width: 1146px;
+  min-width: 900px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news {
+  width: 560px;
+  min-height: 220px;
+
+  float: left;
+  background-image: url("../Greatness begins/Картинки/Клубничный фон.png");
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: #5a5a5a;
+
+  padding-left: 20px;
+  padding-top: 27px;
+}
+
+.news a {
+  font-size: 24px;
+  color: #353535;
+  font-weight: bold;
+}
+
+.news a:hover {
+  text-decoration: none;
+}
+
+.mailing {
+  width: 560px;
+  min-height: 220px;
+  float: right;
+  background-image: url("../Greatness begins/Картинки/Подложка.png");
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.user-mail .btn:hover {
+background-color: #f17c64;
+box-shadow: 0 2px 2px #ac1000;
+}
+
+.user-mail .btn:active {
+background-color: #da4f36;
+box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.mailing p {
+padding: 25px 26px 0px 27px;
+}
+
+.user-mail {
+  margin-top: 30px;
+  position: relative;
+}
+
+.user-mail input[type=email] {
+margin-left: 26px;
+width: 360px;
+height: 20px;
+padding: 20px 10px;
+margin-right: 11px;
+border: 1px solid #c7c6c5;
+box-sizing: border-box;
+border-radius: 5px;
+outline: none;
+}
+
+.user-mail input[type=email]:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.user-mail input[type=email]:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.user-mail .btn {
+color: white;
+display: inline-block;
+padding: 11px 20px;
+background-color: #ed5b3d;
+font-size: 17px;
+font-weight: bold;
+line-height: 24.3px;
+margin-right: 26px;
+text-decoration: none;
+border: none;
+border-radius: 40px;
+outline: none;
+box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+cursor: pointer;
+}
+
+.user-mail .mail-change-color:hover .btn {
+  background-color: #f17c64;
+}
+
+.map {
+  margin-top: 10px;
+  width: 1146px;
+  min-width: 900px;
+  max-width: 1200px;
+  min-height: 430px;
+  background-image: url("../Greatness begins/Картинки/Layer 3.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.address {
+  width: 302px;
+  min-height: 304px;
+border-radius: 15px;
+  background-color: #fdfefe;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+
+.how-to-find-us {
+margin-top: 33px;
+margin-left: 25px;
+}
+
+.address p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+
+}
+
+.how-to-find-us > p > strong {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.how-to-find-us .btn:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.how-to-find-us .btn:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.address a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24.5px;
+  display: block;
+  display: inline-block;
+  border-radius: 40px;
+  padding: 10px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: white;
+  background-color: #ed5b3d;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+}
+
+.ice-cream-on-map {
+  position: absolute;
+  left: 260px;
+  bottom: 145px;
+}
+
+/*затемнение экрана*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+display: none;
+}
+
+.overlay-show {
+  display: block;
+}
+
+/*обратная связь*/
+.feedback {
+  position: fixed;
+  width: 478px;
+  right: 200px;
+  height: 442px;
+  background-color: #f8f7f4;
+bottom: 20%;
+border-radius: 10px;
+right: 32%;
+z-index: 20;
+display: none;
+}
+
+.feedback-show {
+  display: block;
+  animation: slide 0.6s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(50px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+0%, 100% {
+  transform: translateX(0);
+}
+10%, 30%, 50%, 70%, 90% {
+  transform: translateX(-10px);
+}
+20%, 40%, 60%, 80% {
+  transform: translateX(10px);
+}
+
+}
+.modal-error {
+animation: shake 0.6s;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: #f8f7f4;
+}
+
+.close::before,
+.close::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  right: 0px;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.feedback p {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.feedback .name {
+  padding-left: 15px;
+  width: 267px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 24.3px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(178,178,178,.5);
+}
+
+.feedback .name:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.feedback .name:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.feedback .answer {
+  padding-left: 15px;
+  width: 267px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 24.3px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(178,178,178,.5);
+}
+
+.feedback .answer:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.feedback .answer:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.feedback textarea {
+  box-sizing: border-box;
+    width: 428px;
+    height: 155px;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.feedback textarea:hover {
+box-shadow: 0 0 0 1.5px #c6c6c5;
+}
+
+.feedback textarea:focus {
+box-shadow: 0 0 0 1.5px #729cdc;
+}
+
+.feedback .name + label,
+.feedback .answer + label,
+.feedback textarea + label {
+display: none;
+position: absolute;
+}
+
+
+.feedback .name:focus + label {
+  font-size: 10px;
+   transform: translate(20px, -70px);
+   color: #729cdc;
+   display: block;
+}
+
+.feedback .answer:focus + label,
+.feedback .answer:valid + label {
+  font-size: 10px;
+   transform: translate(20px, -70px);
+   color: #729cdc;
+   display: block;
+}
+
+.feedback textarea:focus + label,
+.feedback textarea:valid + label {
+  font-size: 10px;
+   transform: translate(20px, -190px);
+   color: #729cdc;
+   display: block;
+}
+
+.feedback .send {
+  display: block;
+  float: right;
+  margin-right: 35px;
+  margin-top: 25px;
+  color: white;
+  font-size: 16px;
+  line-height: 24.3px;
+  font-weight: bold;
+  background-color: #ee5e3f;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 40px;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+    cursor: pointer;
+}
+
+.feedback .send:hover {
+  background-color: #f17c64;
+  box-shadow: 0 2px 2px 0 #ac1000;
+}
+
+.feedback .send:active {
+  background-color: #da4f36;
+  box-shadow: inset 0 2px 2px 0 #ac1000;
+}
+
+.footer {
+    margin-top: 40px;
+    clear: both;
+    width: 1146px;
+    min-width: 900px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social {
+  width: 267px;
+  float: left;
+  margin-right: 26px;
+  position: relative;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-social .twitter {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+  background-position: 0px -168px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  content: "";
+  border: 4px solid #c2cec7;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.footer-social .twitter:hover,
+.footer-social .instagram:hover,
+.footer-social .facebook:hover,
+.footer-social .vk:hover {
+  opacity: 1;
+  border: 4px solid rgba(255,255,255,.7);
+}
+
+.footer-social .twitter:active,
+.footer-social .instagram:active,
+.footer-social .facebook:active,
+.footer-social .vk:active {
+  border-color: rgba(255,255,255,.7);
+    box-shadow: inset 0 2px 1px #888;
+  }
+
+.footer-social .instagram {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+  background-position: 0px -70px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  content: "";
+  border: 4px solid #c2cec7;
+  border-radius: 50%;
+  left: 50px;
+    opacity: 0.8;
+}
+
+.footer-social .facebook {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+  background-position: 0px -209px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  content: "";
+  border: 4px solid #c2cec7;
+  border-radius: 50%;
+    left: 100px;
+      opacity: 0.8;
+}
+
+.footer-social .vk {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+  background-position: 0px 0px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  content: "";
+  border: 4px solid #c2cec7;
+  border-radius: 50%;
+    left: 150px;
+      opacity: 0.8;
+}
+
+.footer-menu {
+  width: 325px;
+    float: left;
+    margin-right: 26px;
+    padding-left: 23px;
+    margin-top: 0px;
+    position: relative;
+      margin-left: 70px;
+}
+
+.footer-menu a {
+  font-size: 13px;
+  color: white;
+}
+
+.footer-menu a:hover {
+  color: #ffbc9e;
+}
+
+.top-info .left-info a {
+  font-weight: bold;
+}
+
+.top-info {
+  width: 325px;
+  float: left;
+}
+
+.bottom-info {
+  width: 325px;
+  float: left;
+}
+
+.left-info {
+  float: left;
+}
+
+.footer-menu::before {
+  background: url("../Greatness begins/Картинки/Без названия.png") no-repeat top left;
+background-position: 0px -250px;
+width: 15px;
+height: 13px;
+content: "";
+position: absolute;
+left: 0;
+top: 5px;
+}
+
+.right-info {
+  float: right;
+}
+
+
+.top-info .left-info a{
+  font-weight: bold;
+}
+
+.top-info .right-info {
+margin-right: 55.5px;
+}
+
+
+.footer-authors {
+  width: 190px;
+  float: right;
+  font-size: 12px;
+}
+
+.footer-authors a {
+  color: white;
+}
+
+.footer-authors a:hover {
+  color: #ffbc9e;
+}
+
+.footer-social,
+.footer-menu,
+.footer-authors {
+  margin-top: 20px;
+}
